@@ -68,6 +68,17 @@ public class MainActivity extends AppCompatActivity {
         } else return 0;
     }
 
+//    public void flood(int i, int j, TextView tv) {
+//        if (i < 0 || i > 10 || j < 0 || j > 12) return;
+//        if (isMine(i,j) == 1) return;
+//        tv.setTextColor(Color.GRAY);
+//        tv.setBackgroundColor(Color.LTGRAY);
+//        flood(i,j-1,tv);
+//        flood(i,j+1,tv);
+//        flood(i-1,j,tv);
+//        flood(i+1,j,tv);
+//    }
+
     public void onClickTV(View view){
         TextView tv = (TextView) view;
         int n = findIndexOfCellTextView(tv);
@@ -96,6 +107,7 @@ public class MainActivity extends AppCompatActivity {
         }else {
             tv.setTextColor(Color.GRAY);
             tv.setBackgroundColor(Color.LTGRAY);
+//            flood(i,j,tv);
         }
     }
 

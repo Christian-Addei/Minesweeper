@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             android:width="64dp"
             android:height="64dp"
-            android:text="10"
+            android:text="4"
             android:textAlignment="center"
             android:textSize="32sp"
             tools:layout_editor_absoluteX="124dp"
@@ -66,7 +66,7 @@
             android:layout_height="wrap_content"
             android:width="64dp"
             android:height="64dp"
-            android:text="10"
+            android:text="0"
             android:textAlignment="center"
             android:textSize="32sp"
             tools:layout_editor_absoluteX="296dp"
@@ -86,11 +86,43 @@
         app:columnCount="10"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:rowCount="12">
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout02"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView04"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:width="128dp"
+            android:height="128dp"
+            android:text="@string/pick"
+            android:textAlignment="center"
+            android:textSize="32sp"
+            app:layout_column="0"
+            app:layout_row="0"
+            tools:layout_editor_absoluteX="296dp"
+            tools:layout_editor_absoluteY="32dp" />
 
     </androidx.gridlayout.widget.GridLayout>
 
